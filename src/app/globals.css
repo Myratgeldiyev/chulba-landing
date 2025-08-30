@@ -1,26 +1,54 @@
-@import "tailwindcss";
+@import 'tailwindcss';
 
+.nav-link::after {
+	content: '';
+	position: absolute;
+	left: 50%;
+	bottom: 0;
+	width: 0;
+	height: 2px;
+	margin: 6;
+	background-color: black;
+	transition: all 0.3s ease;
+	transform: translateX(-50%);
+}
+
+.nav-link:hover::after {
+	width: 100%;
+}
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+	--squirrel-50: #f9f8f7;
+	--squirrel-100: #f2efee;
+	--squirrel-200: #e7e3e1;
+	--squirrel-300: #d6cfcb;
+	--squirrel-400: #bdb2ac;
+	--squirrel-500: #9b8b83;
+	--squirrel-600: #8d7d75;
+	--squirrel-700: #746761;
+	--squirrel-800: #625752;
+	--squirrel-900: #544c48;
+	--squirrel-950: #2b2624;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+.text-squirrel-800 {
+	color: var(--squirrel-800);
+}
+.text-squirrel-900 {
+	color: var(--squirrel-900);
+}
+.bg-squirrel-200 {
+	background-color: var(--squirrel-200);
+}
+.text-squirrel-950 {
+	color: var(--squirrel-950);
+}
+.bg-squirrel-950 {
+	color: var(--squirrel-950);
+}
+.bg-squirrel-300 {
+	background-color: var(--squirrel-300);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+.border-squirrel-300 {
+	border-color: var(--squirrel-300);
 }
