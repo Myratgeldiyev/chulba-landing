@@ -4,14 +4,17 @@ export const Map = () => {
 	return (
 		<div className='w-full bg-white border-y-5 border-black  h-[450px] md:h-[600px] lg:h-[700px] overflow-hidden px-6 py-6 '>
 			<div className='flex  gap-3 items-center '>
-				<div className='flex flex-col gap-3 bg-squirrel-200 w-[50px] h-[50px]  rounded-full items-center justify-center'>
+				<div className='flex flex-col gap-3 bg-squirrel-200 !w-[50px] !h-[50px]  rounded-full items-center justify-center'>
 					<Icon className='w-6 h-6' color='#625752' type='location' />
 				</div>
-				<div className=' flex-col flex  '>
+				<div className=' flex-col flex pt-5'>
 					<h1 className='text-squirrel-900 text-[24px] font-semibold'>
 						Location:
 					</h1>
-					<p className='text-gray-600 '>Abadan, Ashagabat, Turkmenistan</p>
+					<p className='text-gray-600 w-[370px]'>
+						Turkmenistan,Buzmein district,Gurtly residential complex,
+						Gurbansoltan eje avenue 534
+					</p>
 				</div>
 			</div>
 			<div className='flex  gap-3 items-center mt-6'>
