@@ -7,8 +7,8 @@ export const Footer = () => {
 	return (
 		<footer className='w-full bg-[#544c48] mt-[80px] text-white pt-12'>
 			<Container>
-				<main className='grid grid-cols-1 md:grid-cols-2 gap-10 pb-12'>
-					<div className='flex gap-5 w-[50%]'>
+				<main className='grid grid-cols-1 justify-between w-full md:grid-cols-2 gap-10 pb-12'>
+					<div className='flex gap-5 w-full'>
 						<div className='flex flex-col gap-5 w-full'>
 							<h1 className='text-[26px] font-bold'>Chulba Hususy Karhanasy</h1>
 							<p className='text-[16px] font-medium text-gray-300'>

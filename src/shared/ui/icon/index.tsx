@@ -12,6 +12,8 @@ interface P {
 		| 'left-arrow'
 		| 'right-arrow'
 		| 'location'
+		| 'mail'
+		| 'phone'
 		| string
 	color?: string
 	className?: string
@@ -20,6 +22,34 @@ interface P {
 export const Icon: FC<P> = ({ type, color = '#054751', className }) => {
 	return (
 		<>
+			{type === 'phone' && (
+				<svg
+					xmlns='http://www.w3.org/2000/svg'
+					viewBox='0 0 24 24'
+					width='1em'
+					height='1em'
+					className={className}
+				>
+					<path
+						fill={color}
+						d='M15.5 1h-8A2.5 2.5 0 0 0 5 3.5v17A2.5 2.5 0 0 0 7.5 23h8a2.5 2.5 0 0 0 2.5-2.5v-17A2.5 2.5 0 0 0 15.5 1m-4 21c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5s1.5.67 1.5 1.5s-.67 1.5-1.5 1.5m4.5-4H7V4h9z'
+					></path>
+				</svg>
+			)}
+			{type === 'mail' && (
+				<svg
+					xmlns='http://www.w3.org/2000/svg'
+					viewBox='0 0 24 24'
+					width='1em'
+					height='1em'
+					className={className}
+				>
+					<path
+						fill={color}
+						d='M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2m0 14H4V8l8 5l8-5zm-8-7L4 6h16z'
+					></path>
+				</svg>
+			)}
 			{type === 'location' && (
 				<svg
 					xmlns='http://www.w3.org/2000/svg'
