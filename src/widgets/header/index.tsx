@@ -17,11 +17,11 @@ export const Header = () => {
 			<div className='max-w-7xl mx-auto px-4 lg:px-8 py-3 flex justify-between items-center'>
 				<Link href={'/'} className='flex items-center gap-2 group'>
 					<Image
-						src={'/logo.svg'}
+						src={'/output-onlinepngtools-removebg-preview.png'}
 						alt='logo'
 						width={50}
 						height={50}
-						className='xl:w-[100px] w-[70px] transition-transform duration-200 group-hover:scale-105'
+						className='xl:w-[50px] xl:h-[50px] h-[45px] w-[40px]  transition-transform duration-200 group-hover:scale-105'
 					/>
 				</Link>
 

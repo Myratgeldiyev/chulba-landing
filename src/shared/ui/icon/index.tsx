@@ -10,6 +10,8 @@ interface P {
 		| 'en'
 		| 'burger'
 		| 'left-arrow'
+		| 'right-arrow'
+		| 'location'
 		| string
 	color?: string
 	className?: string
@@ -18,7 +20,47 @@ interface P {
 export const Icon: FC<P> = ({ type, color = '#054751', className }) => {
 	return (
 		<>
+			{type === 'location' && (
+				<svg
+					xmlns='http://www.w3.org/2000/svg'
+					viewBox='0 0 24 24'
+					width='1em'
+					height='1em'
+					className={className}
+				>
+					<g
+						fill='none'
+						stroke={color}
+						strokeLinecap='round'
+						strokeLinejoin='round'
+						strokeWidth='2'
+					>
+						<path d='M12 13a3 3 0 1 0 0-6a3 3 0 0 0 0 6'></path>
+						<path d='M17.8 14a7 7 0 1 0-11.5 0h0l.1.3l.3.3L12 21l5.1-6.2l.6-.7l.1-.2Z'></path>
+					</g>
+				</svg>
+			)}
 			{type === 'left-arrow' && (
+				<svg
+					xmlns='http://www.w3.org/2000/svg'
+					viewBox='0 0 48 48'
+					width='1em'
+					height='1em'
+					className={className}
+				>
+					<g
+						fill='none'
+						stroke={color}
+						strokeLinecap='round'
+						strokeLinejoin='round'
+						strokeWidth='4'
+					>
+						<path d='M5.79889 24H41.7989'></path>
+						<path d='M17.7988 36L5.79883 24L17.7988 12'></path>
+					</g>
+				</svg>
+			)}
+			{type === 'right-arrow' && (
 				<svg
 					xmlns='http://www.w3.org/2000/svg'
 					viewBox='0 0 32 32'
