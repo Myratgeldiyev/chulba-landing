@@ -50,5 +50,32 @@
 		"2": "We are proud to cooperate with the leading state-owned enterprises of the cement industry of Turkmenistan.",
 		"3": "Bakharden Cement Factory",
 		"4": "Lebap Cement Factory"
+	},
+	"Clothes": {
+		"1": "Production of workwear",
+		"2": "In addition to the production of polypropylene bags, our company also specializes in sewing workwear for workers and manufacturing enterprises.",
+		"3": "We offer:",
+		"4": "Work suits and uniforms",
+		"5": "Overalls and jackets",
+		"6": "Clothing for construction and industrial sites",
+		"7": "Advantages:",
+		"8": "Practical and wear-resistant materials",
+		"9": "Comfort and protection for employees",
+		"10": "Possibility of custom design and branding",
+		"11": "International experience",
+		"12": "Our workwear was previously exported to Russia and received high praise for its quality and convenience. We continue to expand our supply directions to provide enterprises with reliable workwear at the international level."
+	},
+	"ContactUs": {
+		"1": "Contact us",
+		"2": "Do you have questions? Fill out the form, and we will respond to you quickly.",
+		"3": "Your name",
+		"4": "Email",
+		"5": "Enter your name",
+		"6": "Subject/Topic",
+		"7": "Write your question or request",
+		"8": "Send",
+		"9": "By submitting, you agree to the processing of your information.",
+		"10": "Submit form",
+		"11": "Required fields"
 	}
 }

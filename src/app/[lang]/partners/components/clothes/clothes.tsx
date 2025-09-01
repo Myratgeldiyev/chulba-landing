@@ -1,6 +1,10 @@
+'use client'
+import { useLanguage, useTranslation } from '@/app/[lang]/i18n/client'
 import { Container } from '@/shared/ui/container'
 
 export const Clothes = () => {
+	const { language } = useLanguage()
+	const { t } = useTranslation(language)
 	return (
 		<div className='w-screen min-h-screen relative pt-[120px] bg-center'>
 			<div className='absolute inset-0 bg-[url("/wear-bg.jpg")]  bg-center'></div>
@@ -9,46 +13,39 @@ export const Clothes = () => {
 			<Container>
 				<div className='relative w-full bg-white min-h-[800px] rounded-3xl flex flex-col z-10 p-10 md:p-16 shadow-xl'>
 					<h1 className='text-3xl md:text-4xl font-bold text-gray-800 mb-6'>
-						Производство спецодежды
+						{t('Clothes.1')}
 					</h1>
 
 					<p className='text-gray-600 text-lg leading-relaxed mb-8'>
-						Помимо производства полипропиленовых мешков, наша компания также
-						занимается пошивом спецодежды для рабочих и производственных
-						предприятий.
+						{t('Clothes.2')}
 					</p>
 
 					<div className='grid md:grid-cols-2 gap-12'>
 						<div>
 							<h2 className='text-xl font-semibold text-gray-800 mb-4'>
-								Мы предлагаем:
+								{t('Clothes.3')}
 							</h2>
 							<ul className='list-disc pl-6 text-gray-600 space-y-2'>
-								<li>Рабочие костюмы и формы</li>
-								<li>Комбинезоны и куртки</li>
-								<li>Одежду для строительных и промышленных объектов</li>
+								<li> {t('Clothes.4')}</li>
+								<li>{t('Clothes.5')}</li>
+								<li>{t('Clothes.6')}</li>
 							</ul>
 
 							<h2 className='text-xl font-semibold text-gray-800 mt-8 mb-4'>
-								Преимущества:
+								{t('Clothes.7')}
 							</h2>
 							<ul className='list-disc pl-6 text-gray-600 space-y-2'>
-								<li>Практичные и износостойкие материалы</li>
-								<li>Комфорт и защита для сотрудников</li>
-								<li>Возможность индивидуального дизайна и брендирования</li>
+								<li>{t('Clothes.8')}</li>
+								<li>{t('Clothes.9')}</li>
+								<li>{t('Clothes.10')}</li>
 							</ul>
 						</div>
 
 						<div className='bg-gray-50 rounded-2xl p-6 shadow-inner'>
 							<h2 className='text-xl font-semibold text-gray-800 mb-4'>
-								Международный опыт
+								{t('Clothes.11')}
 							</h2>
-							<p className='text-gray-600 leading-relaxed'>
-								Наша спецодежда ранее экспортировалась в Россию и получила
-								высокую оценку за качество и удобство. Мы продолжаем расширять
-								направления поставок, чтобы обеспечить предприятия надёжной
-								рабочей одеждой на международном уровне.
-							</p>
+							<p className='text-gray-600 leading-relaxed'>{t('Clothes.12')}</p>
 						</div>
 					</div>
 				</div>

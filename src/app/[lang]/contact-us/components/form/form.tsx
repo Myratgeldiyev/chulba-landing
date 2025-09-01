@@ -1,4 +1,5 @@
 'use client'
+import { useLanguage, useTranslation } from '@/app/[lang]/i18n/client'
 import { useState } from 'react'
 import { Container } from '../../../../../shared/ui/container/index'
 
@@ -6,6 +7,8 @@ export const Form = () => {
 	const [status, setStatus] = useState<'idle' | 'loading' | 'sent' | 'error'>(
 		'idle'
 	)
+	const { language } = useLanguage()
+	const { t } = useTranslation(language)
 
 	const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
 		e.preventDefault()
@@ -28,11 +31,10 @@ export const Form = () => {
 			<div id='contact' className='w-full max-w-3xl mx-auto py-16 px-4'>
 				<div className='text-center mb-12 mt-9'>
 					<h2 className='text-3xl md:text-4xl font-bold text-gray-900'>
-						Biz bilen habarlasyn
+						{t('ContactUs.1')}
 					</h2>
 					<p className='text-gray-500 mt-2 max-w-md mx-auto'>
-						Soraglaryňyz barmy? Formy dolduryň, biz size tiz wagtda jogap
-						bereris.
+						{t('ContactUs.2')}
 					</p>
 				</div>
 
@@ -43,19 +45,20 @@ export const Form = () => {
 					<div className='grid grid-cols-1 sm:grid-cols-2 gap-6'>
 						<label className='flex flex-col gap-2'>
 							<span className='text-sm font-medium text-gray-800'>
-								Adyňyz <span className='text-red-600'>*</span>
+								{t('ContactUs.3')}
+								<span className='text-red-600'>*</span>
 							</span>
 							<input
 								name='name'
 								required
-								placeholder='Adyňyzy giriziň'
+								placeholder={t('ContactUs.4')}
 								className='w-full rounded-xl px-4 py-3 border border-gray-300 bg-gray-50 text-gray-900 placeholder-gray-400 outline-none focus:ring-2 focus:ring-indigo-400 focus:border-indigo-500 transition duration-300 shadow-sm hover:shadow-md'
 							/>
 						</label>
 
 						<label className='flex flex-col gap-2'>
 							<span className='text-sm font-medium text-gray-800'>
-								E-poçta <span className='text-red-600'>*</span>
+								{t('ContactUs.5')} <span className='text-red-600'>*</span>
 							</span>
 							<input
 								type='email'
@@ -68,38 +71,28 @@ export const Form = () => {
 					</div>
 
 					<label className='flex flex-col gap-2'>
-						<span className='text-sm font-medium text-gray-800'>Tema</span>
+						<span className='text-sm font-medium text-gray-800'>
+							{' '}
+							{t('ContactUs.6')}
+						</span>
 						<input
 							name='subject'
-							placeholder='Mesele / tema'
+							placeholder={t('ContactUs.7')}
 							className='w-full rounded-xl px-4 py-3 border border-gray-300 bg-gray-50 text-gray-900 placeholder-gray-400 outline-none focus:ring-2 focus:ring-indigo-400 focus:border-indigo-500 transition duration-300 shadow-sm hover:shadow-md'
 						/>
 					</label>
 
 					<label className='flex flex-col gap-2'>
 						<span className='text-sm font-medium text-gray-800'>
-							Hatyňiz <span className='text-red-600'>*</span>
+							{t('ContactUs.8')} <span className='text-red-600'>*</span>
 						</span>
 						<textarea
 							name='message'
 							required
 							rows={5}
-							placeholder='Soragyňyzy ýa-da islegiňizi ýazyn...'
+							placeholder={t('ContactUs.9')}
 							className='w-full rounded-xl px-4 py-3 border border-gray-300 bg-gray-50 text-gray-900 placeholder-gray-400 outline-none focus:ring-2 focus:ring-indigo-400 focus:border-indigo-500 transition duration-300 shadow-sm hover:shadow-md resize-y'
 						/>
-					</label>
-
-					<label className='flex items-start gap-3 text-sm text-gray-600'>
-						<input
-							type='checkbox'
-							name='consent'
-							required
-							className='mt-1 rounded border-gray-400 focus:ring-indigo-400'
-						/>
-						<span>
-							Ugratmak bilen, maglumatlaryňyzyň gaýtadan işlenmegine razylyk
-							berýärsiňiz.
-						</span>
 					</label>
 
 					<button
@@ -111,7 +104,7 @@ export const Form = () => {
 							? 'Ugratylýar…'
 							: status === 'sent'
 							? 'Ugradyldy ✓'
-							: 'Formy ugrat'}
+							: `${t('ContactUs.10')}`}
 					</button>
 
 					{status === 'error' && (
@@ -126,7 +119,7 @@ export const Form = () => {
 					)}
 				</form>
 
-				<p className='text-xs text-gray-400 mt-4'>* Hökmany meýdançalar</p>
+				<p className='text-xs text-gray-400 mt-4'> {t('ContactUs.11')}</p>
 			</div>
 		</Container>
 	)
