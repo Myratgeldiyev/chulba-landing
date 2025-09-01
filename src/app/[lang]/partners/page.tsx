@@ -1,8 +1,6 @@
 'use client'
 import { Clothes } from './components/clothes/clothes'
 
-export const PartnersPage = () => {
+export default function PartnersPage() {
 	return <Clothes />
 }
-
-export default PartnersPage

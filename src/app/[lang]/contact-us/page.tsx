@@ -1,6 +1,5 @@
 import { Form } from './components/form/form'
 
-export const ContactUsPage = () => {
+export default function ContactUsPage() {
 	return <Form />
 }
-export default ContactUsPage
