@@ -1,0 +1,54 @@
+{
+	"Home": {
+		"1": "Chulba Private Enterprise",
+		"2": "We have all your needs",
+		"3": "About Us",
+		"4": "Contact Us",
+		"5": "Sold Products",
+		"6": "Years of Service",
+		"7": "Countries"
+	},
+	"AboutUs": {
+		"1": "About the Company",
+		"2": "Who We Are",
+		"3": "We are a modern manufacturer of polypropylene valve bags for cement and construction materials, as well as bags for food and agricultural products (flour, grain, sugar, etc.). Since 2017, we have been successfully operating in the market, ensuring stable supplies for companies in the region and beyond. Today, our team of more than 200 specialists produces up to 20,000 bags per day.",
+		"4": "International Presence",
+		"5": "Our products are exported to Russia and other countries. We are already actively working in the international market and continue to strengthen our position in global trade.",
+		"6": "Our Mission",
+		"7": "We create packaging solutions that help our clients be more efficient and competitive. Our goal is to provide high-quality and reliable solutions for partners in the construction, food, and agricultural industries.",
+		"8": "Why Choose Us",
+		"9": [
+			"Experience and reliability — operating in the market since 2017.",
+			"Modern production and high productivity.",
+			"Versatility — bags for cement, flour, and other bulk products.",
+			"International expertise — export and long-term partnerships.",
+			"Competitiveness — quality and conditions for sustainable cooperation."
+		]
+	},
+	"Partners": {
+		"1": "Our Strengths in Cement",
+		"2": "Discover why our cement is trusted for durability, technology, and reliability."
+	},
+	"Cards": {
+		"1": "Strength",
+		"2": "High Durability",
+		"3": "Every cement product from our factory ensures superior durability for long-lasting structures.",
+		"4": "100% customer satisfaction",
+
+		"5": "Technology",
+		"6": "Modern Production Technology",
+		"7": "With state-of-the-art facilities, we produce in compliance with quality standards and in an eco-friendly way.",
+		"8": "Internationally certified production",
+
+		"9": "Delivery",
+		"10": "On-Time Delivery",
+		"11": "Thanks to our wide logistics network, we guarantee fast and reliable delivery for your projects.",
+		"12": "Reduces losses to zero"
+	},
+	"OurPartners": {
+		"1": "Our Partners",
+		"2": "We are proud to cooperate with the leading state-owned enterprises of the cement industry of Turkmenistan.",
+		"3": "Bakharden Cement Factory",
+		"4": "Lebap Cement Factory"
+	}
+}

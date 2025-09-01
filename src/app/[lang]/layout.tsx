@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 
 import { GeneralLayout } from '@/widgets/general-layout'
 import './globals.css'
+import { LanguageProvider } from './i18n/client'
 
 export const metadata: Metadata = {
 	title: 'Chulba',
@@ -10,13 +11,17 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
 	children,
+	params: { lang },
 }: Readonly<{
 	children: React.ReactNode
+	params: { lang: string }
 }>) {
 	return (
 		<html lang='en'>
 			<body className={''}>
-				<GeneralLayout>{children}</GeneralLayout>
+				<GeneralLayout>
+					<LanguageProvider initialLanguage={lang}>{children}</LanguageProvider>
+				</GeneralLayout>
 			</body>
 		</html>
 	)

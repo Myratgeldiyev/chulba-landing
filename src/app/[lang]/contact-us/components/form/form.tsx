@@ -1,8 +1,8 @@
 'use client'
-import { Container } from '@/shared/ui/container'
 import { useState } from 'react'
+import { Container } from '../../../../../shared/ui/container/index'
 
-export const ContactUs = () => {
+export const Form = () => {
 	const [status, setStatus] = useState<'idle' | 'loading' | 'sent' | 'error'>(
 		'idle'
 	)
@@ -26,11 +26,11 @@ export const ContactUs = () => {
 	return (
 		<Container>
 			<div id='contact' className='w-full max-w-3xl mx-auto py-16 px-4'>
-				<div className='text-center mb-10'>
-					<h2 className='text-[32px] text-squirrel-900 font-semibold mt-6'>
+				<div className='text-center mb-12 mt-9'>
+					<h2 className='text-3xl md:text-4xl font-bold text-gray-900'>
 						Biz bilen habarlasyn
 					</h2>
-					<p className='text-[15px] text-gray-500 max-w-md mx-auto mt-2'>
+					<p className='text-gray-500 mt-2 max-w-md mx-auto'>
 						Soraglaryňyz barmy? Formy dolduryň, biz size tiz wagtda jogap
 						bereris.
 					</p>
@@ -38,54 +38,54 @@ export const ContactUs = () => {
 
 				<form
 					onSubmit={handleSubmit}
-					className='rounded-2xl shadow-lg p-6 md:p-8 flex flex-col gap-6'
+					className='bg-white rounded-3xl shadow-2xl p-8 md:p-10 flex flex-col gap-6 transition-all duration-300'
 				>
 					<div className='grid grid-cols-1 sm:grid-cols-2 gap-6'>
 						<label className='flex flex-col gap-2'>
-							<span className='text-sm font-medium text-squrrel-900'>
-								Adyňyz <span className='text-red-600'> *</span>
+							<span className='text-sm font-medium text-gray-800'>
+								Adyňyz <span className='text-red-600'>*</span>
 							</span>
 							<input
 								name='name'
 								required
 								placeholder='Adyňyzy giriziň'
-								className='w-full rounded-xl px-3 py-2 border border-squirrel-300 bg-gray-50 text-squirrel-900 placeholder-gray-400 outline-none focus:ring-2 focus:ring-squirrel-400 focus:border-[#625752] transition'
+								className='w-full rounded-xl px-4 py-3 border border-gray-300 bg-gray-50 text-gray-900 placeholder-gray-400 outline-none focus:ring-2 focus:ring-indigo-400 focus:border-indigo-500 transition duration-300 shadow-sm hover:shadow-md'
 							/>
 						</label>
 
 						<label className='flex flex-col gap-2'>
-							<span className='text-sm font-medium text-squrrel-900'>
-								E-poçta <span className='text-red-600'> *</span>
+							<span className='text-sm font-medium text-gray-800'>
+								E-poçta <span className='text-red-600'>*</span>
 							</span>
 							<input
 								type='email'
 								name='email'
 								required
 								placeholder='email@example.com'
-								className='w-full rounded-xl px-3 py-2 border border-squirrel-300 bg-gray-50 text-squirrel-900 placeholder-gray-400 outline-none focus:ring-2 focus:ring-squirrel-400 focus:border-[#625752] transition'
+								className='w-full rounded-xl px-4 py-3 border border-gray-300 bg-gray-50 text-gray-900 placeholder-gray-400 outline-none focus:ring-2 focus:ring-indigo-400 focus:border-indigo-500 transition duration-300 shadow-sm hover:shadow-md'
 							/>
 						</label>
 					</div>
 
 					<label className='flex flex-col gap-2'>
-						<span className='text-sm font-medium text-squrrel-900'>Tema</span>
+						<span className='text-sm font-medium text-gray-800'>Tema</span>
 						<input
 							name='subject'
 							placeholder='Mesele / tema'
-							className='w-full rounded-xl px-3 py-2 border border-squirrel-300 bg-gray-50 text-squirrel-900 placeholder-gray-400 outline-none focus:ring-2 focus:ring-squirrel-400 focus:border-[#625752] transition'
+							className='w-full rounded-xl px-4 py-3 border border-gray-300 bg-gray-50 text-gray-900 placeholder-gray-400 outline-none focus:ring-2 focus:ring-indigo-400 focus:border-indigo-500 transition duration-300 shadow-sm hover:shadow-md'
 						/>
 					</label>
 
 					<label className='flex flex-col gap-2'>
-						<span className='text-sm font-medium text-squrrel-900'>
-							Hatyňiz <span className='text-red-600'> *</span>
+						<span className='text-sm font-medium text-gray-800'>
+							Hatyňiz <span className='text-red-600'>*</span>
 						</span>
 						<textarea
 							name='message'
 							required
 							rows={5}
 							placeholder='Soragyňyzy ýa-da islegiňizi ýazyn...'
-							className='w-full rounded-xl px-3 py-2 border border-squirrel-300 bg-gray-50 text-squirrel-900 placeholder-gray-400 outline-none focus:ring-2 focus:ring-squirrel-400 focus:border-[#625752] transition resize-y'
+							className='w-full rounded-xl px-4 py-3 border border-gray-300 bg-gray-50 text-gray-900 placeholder-gray-400 outline-none focus:ring-2 focus:ring-indigo-400 focus:border-indigo-500 transition duration-300 shadow-sm hover:shadow-md resize-y'
 						/>
 					</label>
 
@@ -94,7 +94,7 @@ export const ContactUs = () => {
 							type='checkbox'
 							name='consent'
 							required
-							className='mt-1 rounded border-gray-400'
+							className='mt-1 rounded border-gray-400 focus:ring-indigo-400'
 						/>
 						<span>
 							Ugratmak bilen, maglumatlaryňyzyň gaýtadan işlenmegine razylyk
@@ -105,7 +105,7 @@ export const ContactUs = () => {
 					<button
 						type='submit'
 						disabled={status === 'loading'}
-						className='relative inline-flex items-center justify-center rounded-xl px-6 py-3 font-medium text-white bg-gradient-to-r from-squirrel-500 to-squirrel-700 hover:opacity-90 disabled:opacity-60 disabled:cursor-not-allowed shadow-lg transition'
+						className='relative inline-flex items-center justify-center rounded-xl px-6 py-3 font-medium text-white bg-gradient-to-r from-indigo-500 to-indigo-700 hover:opacity-95 disabled:opacity-60 disabled:cursor-not-allowed shadow-lg transition duration-300'
 					>
 						{status === 'loading'
 							? 'Ugratylýar…'

@@ -11,22 +11,27 @@ export const Footer = () => {
 					<div className='flex gap-5 w-full'>
 						<div className='flex flex-col gap-5 w-full'>
 							<h1 className='text-[26px] font-bold'>Chulba Hususy Karhanasy</h1>
-							<p className='text-[16px] font-medium text-gray-300'>
-								Protecting sulphuric acid plants worldwide with innovative
-								corrosion-resistant equipment and engineering excellence since
-								1987.
-							</p>
+
 							<div className='flex gap-2 items-center'>
 								<Icon type='call' color='white' className='w-6 h-6' />
-								<p className='text-[16px]'>+993 00 00 00</p>
+								<p className='text-[16px]'>+993 65 53 48 41</p>
+							</div>
+							<div className='flex gap-2 items-center'>
+								<Icon type='call' color='white' className='w-6 h-6' />
+								<p className='text-[16px]'>+993 65 80 22 02</p>
 							</div>
 							<div className='flex gap-2 items-center'>
 								<Icon type='mail' color='white' className='w-6 h-6' />
-								<p className='text-[16px]'>chulba@gmail.com</p>
+								<p className='text-[16px]'>chulbaturkmen@gmail.com</p>
 							</div>
 							<div className='flex gap-2 items-center'>
-								<Icon type='location' color='white' className='w-6 h-6' />
-								<p className='text-[16px]'>Ashgabat, Turkmenistan</p>
+								<div>
+									<Icon type='location' color='white' className='w-6 h-6' />
+								</div>
+								<p className='text-[16px] w-[]'>
+									Turkmenistan,Buzmein district,Gurtly residential complex,
+									Gurbansoltan eje avenue 534
+								</p>
 							</div>
 						</div>
 

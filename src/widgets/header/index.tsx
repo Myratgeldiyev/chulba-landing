@@ -13,7 +13,7 @@ export const Header = () => {
 	const closeSidebar = () => setIsSidebarOpen(false)
 
 	return (
-		<header className='fixed top-0 left-0 z-50 w-full backdrop-blur-md bg-white/70 shadow-sm'>
+		<header className='fixed top-0 left-0 z-50 w-full backdrop-blur-md bg-white/70 shadow-sm '>
 			<div className='max-w-7xl mx-auto px-4 lg:px-8 py-3 flex justify-between items-center'>
 				<Link href={'/'} className='flex items-center gap-2 group'>
 					<Image

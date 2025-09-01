@@ -1,21 +1,30 @@
 'use client'
 import { Icon } from '@/shared/ui/icon'
+import { usePathname, useRouter } from 'next/navigation'
 import React from 'react'
 
 const languages = [
-	{ lg: 'Tm', icon: 'tk' },
-	{ lg: 'Ru', icon: 'ru' },
+	{ lg: 'Tm', icon: 'tk', path: '/tk' },
+	{ lg: 'Ru', icon: 'ru', path: '/ru' },
+	{ lg: 'En', icon: 'england', path: '/en' },
 ]
 
 export const LanguageDropDown = () => {
 	const [isOpen, setIsOpen] = React.useState(false)
-	const [selected, setSelected] = React.useState(languages[0])
+	const router = useRouter()
+	const pathname = usePathname()
+
+	const currentLang =
+		languages.find(lang => pathname.startsWith(lang.path)) || languages[0]
+	const [selected, setSelected] = React.useState(currentLang)
 
 	const handleDropDown = () => setIsOpen(prev => !prev)
 
-	const handleSelect = (item: { lg: string; icon: string }) => {
+	const handleSelect = (item: { lg: string; icon: string; path: string }) => {
 		setSelected(item)
 		setIsOpen(false)
+		const newPath = item.path + pathname.replace(selected.path, '')
+		window.location.href = newPath
 	}
 
 	return (

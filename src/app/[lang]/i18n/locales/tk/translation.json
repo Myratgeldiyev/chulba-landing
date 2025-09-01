@@ -1,0 +1,56 @@
+{
+	"Home": {
+		"1": "Çulba hususy kärhanasy",
+		"2": "Bizde hemme islegleriniz bar",
+		"3": "Biz barada",
+		"4": "Biz bilen habarlaşyň",
+		"5": "Satylan harytlar",
+		"6": "Hyzmat eden ýylymyz",
+		"7": "Yurtlar"
+	},
+	"AboutUs": {
+		"1": "Kärhana barada",
+		"2": "Biz kim",
+		"3": "Biz häzirki zaman sement we gurluşyk materiallary üçin polipropilen klapanly haltalaryň, şeýle hem azyk we oba hojalyk önümleri (un, däne, şekeriň we başgalar) üçin haltalaryň öndürijisidiris. 2017-nji ýyldan bäri bazarda üstünlikli işleýäris, sebitiň we onuň daşyndaky kompaniýalara durnukly üpjünçiligi üpjün edýäris. Häzirki wagtda 200-den gowrak hünärmenlerden ybarat toparymyz günde 20 000-e çenli halta öndürýär.",
+		"4": "Halkara gatnaşygymyz",
+		"5": "Önümlerimiz Russiýa we beýleki ýurtlara eksport edilýär. Biz eýýäm daşary ýurt bazarynda işjeň işleýäris we halkara söwdasynda ornuny has-da berkitmekde dowam edýäris.",
+		"6": "Biziň maksadymyz",
+		"7": "Biz müşderilere has täsirli we bäsdeşlige ukyply bolmaga kömek edýän gaplaýyş çözgütlerini döredýäris. Maksadymyz gurluşyk, azyk we oba hojalyk pudaklarynda hyzmatdaşlar üçin ýokary hilli we ygtybarly çözgütleri bermekdir.",
+		"8": "Näme üçin bizi saýlaýarlar",
+		"9": {
+			"list": {
+				"1": "Tejribe we ynamlylyk — 2017-nji ýyldan bäri bazarda işleýäris.",
+				"2": "Häzirki zaman önümçiligi we ýokary öndürijilik.",
+				"3": "Uniwersallik — sement, un we beýleki dökün önümleri üçin haltalar.",
+				"4": "Halkara tejribe — eksport we uzak möhletleýin hyzmatdaşlyk gatnaşyklary.",
+				"5": "Bäsdeşlige ukyplylyk — durnukly hyzmatdaşlyk üçin hil we şertler."
+			}
+		}
+	},
+	"Partners": {
+		"1": "Sementdäki güýçli taraplarymyz",
+		"2": "Biziň sementimiziň näme üçin berkligi, tehnologiýasy we ygtybarlylygy üçin ygtybar edilýändigini açyklaň."
+	},
+	"Cards": {
+		"1": "Güýç",
+		"2": "Ýokary berklilik",
+		"3": "Biziň zawodumyzdan çykýan her bir sement önümi uzak möhletleýin gurluşyk üçin ýokary berkligi üpjün edýär.",
+		"4": "100% müşderi kanagatlanmagy",
+
+		"5": "Tehnologiýa",
+		"6": "Häzirki zaman önümçilik tehnologiýasy",
+		"7": "Häzirki zaman desgalar bilen biz ekologiýa taýdan arassa we hil ölçeglerine laýyk önümçilik edýäris.",
+		"8": "Halkara derejede tassyklanan önümçilik",
+
+		"9": "Eltip bermek",
+		"10": "Wagtynda eltip bermek",
+		"11": "Giň logistik ulgamyň kömegi bilen, taslamalaryňyz üçin çalt we ygtybarly eltip bermäni üpjün edýäris.",
+		"12": "Zyýany nola çenli peseldýär"
+	},
+	"OurPartners": {
+		"1": "Biziň hyzmatdaşlarymyz",
+		"2": "Biz Türkmenistanyň sement senagatynyň öňdebaryjy döwlet kärhanalary bilen hyzmatdaşlyk edýänimiz bilen buýsanýarys.",
+		"3": "Baherden sement zawody",
+		"4": "Lebap sement zawody"
+	}
+}
