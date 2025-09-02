@@ -1,6 +1,9 @@
+import { useLanguage, useTranslation } from '@/app/[lang]/i18n/client'
 import { Icon } from '../icon'
 
 export const Map = () => {
+	const { language } = useLanguage()
+	const { t } = useTranslation(language)
 	return (
 		<div className='w-full bg-white border-y-5 border-black  h-[450px] md:h-[600px] lg:h-[700px] overflow-hidden px-6 py-6 '>
 			<div className='flex  gap-3 items-center '>
@@ -9,11 +12,10 @@ export const Map = () => {
 				</div>
 				<div className=' flex-col flex pt-5'>
 					<h1 className='text-squirrel-900 text-[24px] font-semibold'>
-						Location:
+						{t('Down.1')}
 					</h1>
 					<p className='text-gray-600 w-[370px]'>
-						Turkmenistan,Buzmein district,Gurtly residential complex,
-						Gurbansoltan eje avenue 534
+						{t('Footer.1')}, {t('Footer.2')}, {t('Footer.3')},{t('Footer.4')}
 					</p>
 				</div>
 			</div>
@@ -23,7 +25,7 @@ export const Map = () => {
 				</div>
 				<div className=' flex-col flex  '>
 					<h1 className='text-squirrel-900 text-[24px] font-semibold'>
-						Email address:
+						{t('Down.2')}
 					</h1>
 					<p className='text-gray-600 '>chulbaturkmen@gmail.com</p>
 				</div>
@@ -34,7 +36,7 @@ export const Map = () => {
 				</div>
 				<div className=' flex-col flex  '>
 					<h1 className='text-squirrel-900 text-[24px] font-semibold'>
-						Phone number:
+						{t('Down.3')}
 					</h1>
 					<div className='flex items-center gap-5'>
 						<p className='text-gray-600 '>+993(65)53-48-41</p>

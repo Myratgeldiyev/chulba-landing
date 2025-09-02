@@ -28,8 +28,8 @@
 		}
 	},
 	"Partners": {
-		"1": "Sementdäki güýçli taraplarymyz",
-		"2": "Biziň sementimiziň näme üçin berkligi, tehnologiýasy we ygtybarlylygy üçin ygtybar edilýändigini açyklaň."
+		"1": "Torbalarymyzyň güýçli taraplary",
+		"2": "Torbamyzyň berkligi, tehnologiýasy we ygtybarlylygy üçin näme üçin ynamlydygyny biliň."
 	},
 	"Cards": {
 		"1": "Güýç",
@@ -79,5 +79,22 @@
 		"9": "Ugratmak bilen, maglumatlaryňyzyň gaýtadan işlenmegine razylyk berýärsiňiz.",
 		"10": "Formy ugrat",
 		"11": "Hökmany meýdançalar"
+	},
+
+	"main": "Baş sahypa",
+	"about_us": "Biz barada",
+	"partners": "Hyzmatdaşlar",
+	"contact_us": "Habarlaşmak",
+	"Footer": {
+		"1": "Türkmenistan",
+		"2": "Büzmeýin etraby",
+		"3": "Gurtly ýaşaýyş toplumy",
+		"4": "Gurbansoltan eje şaýoly 534",
+		"5": "Çalt Linkler"
+	},
+	"Down": {
+		"1": "Ýerleşýän ýeri:",
+		"2": "E-poçta adresi:",
+		"3": "Telefon belgisi:"
 	}
 }

@@ -23,9 +23,9 @@ export default async function RootLayout({ children, params }: Props) {
 	return (
 		<html lang={lang}>
 			<body>
-				<GeneralLayout>
-					<LanguageProvider initialLanguage={lang}>{children}</LanguageProvider>
-				</GeneralLayout>
+				<LanguageProvider initialLanguage={lang}>
+					<GeneralLayout>{children}</GeneralLayout>
+				</LanguageProvider>
 			</body>
 		</html>
 	)

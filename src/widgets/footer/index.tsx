@@ -1,16 +1,19 @@
 'use client'
+import { useLanguage, useTranslation } from '@/app/[lang]/i18n/client'
 import { Container } from '@/shared/ui/container'
 import { Icon } from '@/shared/ui/icon'
 import { Map } from '@/shared/ui/map'
 
 export const Footer = () => {
+	const { language } = useLanguage()
+	const { t } = useTranslation(language)
 	return (
 		<footer className='w-full bg-[#544c48] mt-[80px] text-white pt-12'>
 			<Container>
 				<main className='grid grid-cols-1 justify-between w-full md:grid-cols-2 gap-10 pb-12'>
 					<div className='flex gap-5 w-full'>
 						<div className='flex flex-col gap-5 w-full'>
-							<h1 className='text-[26px] font-bold'>Chulba Hususy Karhanasy</h1>
+							<h1 className='text-[26px] font-bold'>{t('Home.1')}</h1>
 
 							<div className='flex gap-2 items-center'>
 								<Icon type='call' color='white' className='w-6 h-6' />
@@ -29,8 +32,8 @@ export const Footer = () => {
 									<Icon type='location' color='white' className='w-6 h-6' />
 								</div>
 								<p className='text-[16px] w-[]'>
-									Turkmenistan,Buzmein district,Gurtly residential complex,
-									Gurbansoltan eje avenue 534
+									{t('Footer.1')}, {t('Footer.2')}, {t('Footer.3')},
+									{t('Footer.4')}
 								</p>
 							</div>
 						</div>
@@ -39,19 +42,13 @@ export const Footer = () => {
 							<h2 className='text-[22px] font-semibold'>Quick Links</h2>
 							<nav className='grid grid-cols-1 gap-3 text-gray-200'>
 								<a href='#about' className='hover:text-white transition'>
-									About Us
+									{t('AboutUs.1')}
 								</a>
 								<a href='#products' className='hover:text-white transition'>
-									Products
+									{t('OurPartners.1')}
 								</a>
 								<a href='#services' className='hover:text-white transition'>
-									Services
-								</a>
-								<a href='#news' className='hover:text-white transition'>
-									News
-								</a>
-								<a href='#contact' className='hover:text-white transition'>
-									Contact
+									{t('ContactUs.1')}
 								</a>
 							</nav>
 						</div>

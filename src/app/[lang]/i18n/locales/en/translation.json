@@ -17,17 +17,19 @@
 		"6": "Our Mission",
 		"7": "We create packaging solutions that help our clients be more efficient and competitive. Our goal is to provide high-quality and reliable solutions for partners in the construction, food, and agricultural industries.",
 		"8": "Why Choose Us",
-		"9": [
-			"Experience and reliability — operating in the market since 2017.",
-			"Modern production and high productivity.",
-			"Versatility — bags for cement, flour, and other bulk products.",
-			"International expertise — export and long-term partnerships.",
-			"Competitiveness — quality and conditions for sustainable cooperation."
-		]
+		"9": {
+			"list": {
+				"1": "Experience and reliability — operating in the market since 2017.",
+				"2": "Modern production and high productivity.",
+				"3": "Versatility — bags for cement, flour, and other bulk products.",
+				"4": "International expertise — export and long-term partnerships.",
+				"5": "Competitiveness — quality and conditions for sustainable cooperation."
+			}
+		}
 	},
 	"Partners": {
-		"1": "Our Strengths in Cement",
-		"2": "Discover why our cement is trusted for durability, technology, and reliability."
+		"1": "Our Strengths in Bag Factory",
+		"2": "Discover why our bag factory is trusted for durability, technology, and reliability."
 	},
 	"Cards": {
 		"1": "Strength",
@@ -77,5 +79,22 @@
 		"9": "By submitting, you agree to the processing of your information.",
 		"10": "Submit form",
 		"11": "Required fields"
+	},
+
+	"main": "Home",
+	"about_us": "About Us",
+	"partners": "Partners",
+	"contact_us": "Contact",
+	"Footer": {
+		"1": "Turkmenistan",
+		"2": "Buzmein district",
+		"3": "Gurtly residential complex",
+		"4": "Gurbansoltan eje avenue 534",
+		"5": "Quick Links"
+	},
+	"Down": {
+		"1": "Location:",
+		"2": "Email address:",
+		"3": "Phone number:"
 	}
 }
