@@ -12,7 +12,7 @@ export const AboutUs = () => {
 				<section className='flex flex-col md:flex-row   pt-10 items-center gap-10'>
 					<div className='w-full md:w-1/2 flex justify-center'>
 						<Image
-							src={'/cementsv.png'}
+							src={'/Weixin Image_20250903225457_32.png'}
 							alt='about-us'
 							width={500}
 							height={400}
