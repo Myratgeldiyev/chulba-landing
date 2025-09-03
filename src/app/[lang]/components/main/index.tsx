@@ -14,7 +14,7 @@ export const Main = () => {
 					<LeftSide />
 					<div className='flex w-full lg:w-[50%] justify-center lg:justify-end'>
 						<Image
-							src='/main-logo1.png'
+							src='/favicon.png'
 							alt='flag'
 							width={600}
 							height={500}
