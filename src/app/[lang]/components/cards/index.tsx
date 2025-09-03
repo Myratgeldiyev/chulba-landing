@@ -47,7 +47,7 @@ export const Cards = () => {
 						<div className='group w-full h-[440px] flex flex-col rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300 bg-white border border-gray-200'>
 							<div className='w-full h-[50%] relative overflow-hidden'>
 								<Image
-									src='/cementai.jpeg'
+									src='/Technology.jpg'
 									alt=''
 									width={500}
 									height={500}
@@ -72,7 +72,7 @@ export const Cards = () => {
 						<div className='group w-full h-[440px] flex flex-col rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300 bg-white border border-gray-200'>
 							<div className='w-full h-[50%] relative overflow-hidden'>
 								<Image
-									src='/cementdeliver.jpg'
+									src='/karayolu-tasimaciligi (1).jpg'
 									alt=''
 									width={500}
 									height={500}

@@ -44,7 +44,7 @@ export const Clothes = () => {
 					</div>
 					<div className='w-[50%] h-full flex-col flex items-center   justify-center'>
 						<Image
-							src='/png-transparent-shopping-bag-shopping-bag-set-text-fashion-logo-removebg-preview.png'
+							src='/Weixin Image_20250903222111_30.jpg'
 							alt='clothes'
 							className='w-full h-full'
 							width={400}

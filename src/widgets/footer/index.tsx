@@ -17,6 +17,10 @@ export const Footer = () => {
 
 							<div className='flex gap-2 items-center'>
 								<Icon type='call' color='white' className='w-6 h-6' />
+								<p className='text-[16px]'>+993 65 80 51 08</p>
+							</div>
+							<div className='flex gap-2 items-center'>
+								<Icon type='call' color='white' className='w-6 h-6' />
 								<p className='text-[16px]'>+993 65 53 48 41</p>
 							</div>
 							<div className='flex gap-2 items-center'>
@@ -26,6 +30,14 @@ export const Footer = () => {
 							<div className='flex gap-2 items-center'>
 								<Icon type='mail' color='white' className='w-6 h-6' />
 								<p className='text-[16px]'>chulbaturkmen@gmail.com</p>
+							</div>
+							<div className='flex gap-2 items-center'>
+								<Icon type='whatsapp' color='white' className='w-6 h-6' />
+								<p className='text-[16px]'>WhatsApp</p>
+							</div>
+							<div className='flex gap-2 items-center'>
+								<Icon type='telegram' color='white' className='w-6 h-6' />
+								<p className='text-[16px]'>Telegram</p>
 							</div>
 							<div className='flex gap-2 items-center'>
 								<div>
